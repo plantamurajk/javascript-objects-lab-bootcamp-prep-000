@@ -3,6 +3,6 @@ var recipes = {}
 
 function updateObjectWithKeyAndValue(object, key, value){
   var clone = Object.assign({}, object)  
-  clone.key = value
+  clone[key] = value
   return clone
 }
